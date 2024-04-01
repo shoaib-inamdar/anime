@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "gilroy";
+  }
+  
+  html,
+  body {
+    height: 100%;
+    width: 100%;
+  }
+  
+  .main {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    overflow: hidden;
+    background: #000;
+    /* padding: 10px; */
+    /* border: 10px solid rgba(0, 0, 0, .6); */
+    /* backdrop-filter: blur(10px); */
+  }
+  .box{
+    height: 100vh;
+    margin: 10px .3rem;
+    width: calc(100vw/5);
+    /* border: 2px solid red; */
+    position: relative;
+    border-radius: 30px;
+  }
+  .box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    opacity: 1;
+    z-index: 9;
+    border-radius: 30px;
+  }
+  .box video{
+    border-radius: 30px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  /* .box:hover{ */
+    /* z-index: 99; */
+    /* position: absolute; */
+    /* width: 100px; */
+  /* } */
+  .box:hover{
+    width:35rem;
+    transition: all .5s ease-in-out;
+  }
+  .box>img:hover{
+    opacity: 0;
+    transition: all .3s ease-in-out;
+  }
+  .topnav,.bottomnav{
+    width: 100%;
+    /* top: 0; */
+    text-align: center;
+    position: absolute;
+    z-index: 9999;
+    display: flex;
+    border-radius: 30px;
+    background: rgba(0, 0,0,.5);
+    backdrop-filter: blur(10px);
+    color: #fff;
+    transition: all .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+  .topnav{
+    top: -100%;
+    font-size: 2rem;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+
+    /* background-color: rebeccapurple; */
+  }
+  .topnav img{
+    width: 100%;
+    height: 100%;
+    /* object-fit: contain; */
+    object-fit: fill;
+    /* object-fit: calc(100%-110px); */
+    /* font-size: 200px; */
+    /* padding: 10px 10px; */
+  }
+  .bottomnav{
+    bottom: -100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 6rem;
+  }
+  .box:hover .topnav{
+    top: 0;
+  }
+  .box:hover .bottomnav{
+    bottom: 0;
+  }
+  .bottomnav a{
+    width: 200px;
+    height: 70px;
+    border-radius: 40px;
+    background:transparent;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+  }
+  
+  
+</style>
+<body>
+    <div class="main">
+        <div class="box">
+          <div class="topnav"><img src="images/aottext.png" alt=""></div>
+            <img src="images/eren.jpg" alt="">
+            <video autoplay muted loop src="videos/aot.mp4"></video>
+            <div class="bottomnav">
+              <a href="aot.html"><h1>arrow</h1></a>
+            </div>
+          </div>
+          <div class="box">
+            <div class="topnav"><img src="images/jjktext.png" alt=""></div>
+            <img src="images/gojo.jpg" alt="">
+            <video autoplay muted loop src="videos/jjk.mp4"></video>
+            <div class="bottomnav">
+              <a href="jjk.html"><h1>arrow</h1></a>
+            </div>
+          </div>
+          <div class="box">
+            <div class="topnav"><img src="images/dragonballtext.png" alt=""></div>
+            <img src="images/goku.jpg" alt="">
+            <video autoplay muted loop src=""></video>
+            <div class="bottomnav">
+              <a href="goku.html"><h1>arrow</h1></a>
+            </div>
+          </div>
+          <div class="box">
+            <div class="topnav"><img src="images/narutotext.png" alt=""></div>
+            <img src="images/naruto.jpg" alt="">
+            <video autoplay muted loop src="videos/naruto.mp4"></video>
+            <div class="bottomnav">
+              <a href="naruto.html"><h1>arrow</h1></a>
+            </div>
+          </div>
+          <div class="box">
+            <div class="topnav"><img src="images/sololevelingtext.png" alt=""></div>
+            <img src="images/solo.jpg" alt="">
+            <video autoplay muted loop src=""></video>
+            <div class="bottomnav">
+              <a href="solo.html"><h1>arrow</h1></a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
