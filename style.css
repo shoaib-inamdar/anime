@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "gilroy";
+    /* color: #000s; */
+    font-family: 'Poppins';
+    
   }
   
   html,
@@ -105,22 +108,28 @@
     overflow: hidden;
     position: relative;
     pointer-events: none;
-    
+    font-family: 'Poppins';
+    -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
   }
   
   .elem h1:nth-child(1) {
       top: 0;
-  }
-  
-  .elem h1 {
+    }
+    
+    .elem h1 {
+      /* -webkit-text-stroke: 2px solid #000; */
+      /* stroke:2px solid black; */
+    /* mix-blend-mode: darken; */
     line-height: 1;
     font-size: 7vw;
-    font-family: kajiro;
+    /* font-family: kajiro; */
     font-weight: 100;
     color: white;
     position: absolute;
     top: 100%;
     left: 0;
+    
   }
   
   .hero-left .btn {
@@ -159,6 +168,7 @@
     font-size: 14px;
     font-weight: 300;
     margin-bottom: 20px;
+    line-height: 10px;
   }
   
   .imagediv {
