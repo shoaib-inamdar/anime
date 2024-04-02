@@ -5,7 +5,7 @@
     font-family: "gilroy";
     /* color: #000s; */
     font-family: 'Poppins';
-    
+    cursor: none;
   }
   
   html,
@@ -148,8 +148,10 @@
     border-radius: 20px;
     text-transform: uppercase;
     pointer-events: all;
+    cursor:pointer;
   }
   .hero-left .btn a{
+    cursor:pointer;
     color: #fff;
     text-decoration: none;
   }

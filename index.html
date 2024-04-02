@@ -13,6 +13,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "gilroy";
+    cursor: none !important;
   }
   
   html,
@@ -31,7 +32,9 @@
     /* border: 10px solid rgba(0, 0, 0, .6); */
     /* backdrop-filter: blur(10px); */
   }
+  
   .cursor{
+    /* cursor: not-allowed; */
     width: 100px;
     height: 100px;
     background:rgba(0, 0,0,.5);
@@ -47,11 +50,13 @@
     border: 2px solid #fff;
     transform: translate(-50%,-50%) rotate(-40deg);
     pointer-events: none;
-    cursor: pointer;
+    /* cursor: pointer; */
     
   }
   .cursor i{
+    cursor: none;
     font-size: 3rem;
+    position: fixed;
   }
   .box{
     height: 100vh;

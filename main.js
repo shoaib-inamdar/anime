@@ -1,4 +1,5 @@
 var crsr = document.querySelector(".cursor");
+// var i = document.querySelector(".cursor i");
 var a=document.querySelectorAll(".bottomnav>a")
 // a.forEach((elem)=>{
     
